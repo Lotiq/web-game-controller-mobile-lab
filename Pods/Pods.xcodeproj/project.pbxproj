@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CC80DC4653566CE5F617B43AB04AD5D /* Pods-Web Game Controller-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB040C1A07D4DD0EC0A7067F378F13C /* Pods-Web Game Controller-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EEED437E7728C121E3AD24A895B34F7 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B95BD8B41387056A0032EDFC1F10B0 /* Starscream-dummy.m */; };
+		4E0F59766A92D370E2EEBB4F6EC2C042 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BC0DFE545EA419B38265AE077F1A2 /* WebSocket.swift */; };
+		6F7BB3246775DB64A07FC31071CB1DEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		840F7EB1E04F91734D493B4AC77B401E /* CDJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF9F4131503D9DF05473AB5449C057F /* CDJoystick.swift */; };
+		940C2D1DE993E28F9EEAD16E62A96446 /* CDJoystick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 432121A00B690222A108D6DCCACB552B /* CDJoystick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B02B7C1DEE9B66E453E42C8882329A0 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FFF8BDD33D0CAF2164F6A6FBFDDCC3 /* Compression.swift */; };
+		A5C8E1790140A4CB0A2BDAB7FB9C7523 /* CDJoystick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D15BDE05CCDD8CDCD085A79FC6B417A /* CDJoystick-dummy.m */; };
+		AE72819883C40CE385AD6979F140BF3D /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DB7B7A2D70D1B530ADB41DFA897BC1F /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B25BDBC0C4A37B9C6573D702C66BF560 /* Pods-Web Game Controller-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F042E0CC20D25C23E0097705C8C39 /* Pods-Web Game Controller-dummy.m */; };
+		B2E480EF91BB66D872C4AB85E888A2EB /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59808DC661C38DCCFE22D78C32404D6A /* SSLClientCertificate.swift */; };
+		B54669B55CAD05D71D76350DABAC5AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		C18C396B7FF6EE0BC91B65D0BDECC53F /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D7916723D50974E73C4CB1A1BC61FF /* SSLSecurity.swift */; };
+		C934B298C6A9C48B55B2E529C0E14A98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2103B89CC115D5A72B70EC55EB11A868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85573E98411DFB7F88D6CD56CAFD8FFE;
+			remoteInfo = Starscream;
+		};
+		CB9E18AEF0F02DA553E7B76A0A63E7A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E75BC21918A9ECCCD0F386DC0947BEDD;
+			remoteInfo = CDJoystick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0274B71AC9E6F86EF6DDEF855D68DFBD /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		096100C61F7466762E6F863E58FC0CA5 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		0B3EC9B304ACFD50E88AA440110093AC /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		11A200D6B5801B5C24B9522410A1BD4E /* Pods-Web Game Controller-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Web Game Controller-Info.plist"; sourceTree = "<group>"; };
+		20D868C321C33B331F709760D435053D /* CDJoystick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDJoystick-prefix.pch"; sourceTree = "<group>"; };
+		2DB7B7A2D70D1B530ADB41DFA897BC1F /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		432121A00B690222A108D6DCCACB552B /* CDJoystick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDJoystick-umbrella.h"; sourceTree = "<group>"; };
+		48B95BD8B41387056A0032EDFC1F10B0 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		49F3938A6CA43C77DBC2156CFF6A8487 /* Pods-Web Game Controller.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Web Game Controller.modulemap"; sourceTree = "<group>"; };
+		4C02C28AA356D9A8A8A144B10C3115FF /* Pods-Web Game Controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Web Game Controller.release.xcconfig"; sourceTree = "<group>"; };
+		4D15BDE05CCDD8CDCD085A79FC6B417A /* CDJoystick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDJoystick-dummy.m"; sourceTree = "<group>"; };
+		56FFF8BDD33D0CAF2164F6A6FBFDDCC3 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
+		59808DC661C38DCCFE22D78C32404D6A /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
+		5B8F042E0CC20D25C23E0097705C8C39 /* Pods-Web Game Controller-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Web Game Controller-dummy.m"; sourceTree = "<group>"; };
+		7822AC120036FA3C56C7DB7C71AF5ACD /* Pods-Web Game Controller-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Web Game Controller-frameworks.sh"; sourceTree = "<group>"; };
+		791BC0DFE545EA419B38265AE077F1A2 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		7E9CCD9B8FD803B242282DC1FDCBE171 /* CDJoystick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDJoystick.framework; path = CDJoystick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B34A7DEC06A29917CF2AE2D447FDBB /* Pods-Web Game Controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Web Game Controller.debug.xcconfig"; sourceTree = "<group>"; };
+		8A84753D46F331BF927AD01CEDE34E73 /* Pods_Web_Game_Controller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Web_Game_Controller.framework; path = "Pods-Web Game Controller.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3AF6F793092466688D49D035754D757 /* CDJoystick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDJoystick.xcconfig; sourceTree = "<group>"; };
+		A78446E17036852A46E6532653F6D23C /* Pods-Web Game Controller-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Web Game Controller-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AE7766CE0D71E7C62EB150FE9908CFE8 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		BA156C7564B593257C4A7C2C6CC28CA3 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		BCB040C1A07D4DD0EC0A7067F378F13C /* Pods-Web Game Controller-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Web Game Controller-umbrella.h"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0D7916723D50974E73C4CB1A1BC61FF /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
+		D17606777759FB9E3F962C0F24CC7981 /* CDJoystick-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CDJoystick-Info.plist"; sourceTree = "<group>"; };
+		D8890ACCB8E317896F6A5DF22BA7A887 /* Pods-Web Game Controller-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Web Game Controller-acknowledgements.plist"; sourceTree = "<group>"; };
+		F4AD670BB16D582597E5B29A121AA9D4 /* CDJoystick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CDJoystick.modulemap; sourceTree = "<group>"; };
+		FDF9F4131503D9DF05473AB5449C057F /* CDJoystick.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CDJoystick.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		397A1EC01A5696D5173EB8DEAB748C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7BB3246775DB64A07FC31071CB1DEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0F8DA1BCFF7CC97CE1EB24481A0549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C934B298C6A9C48B55B2E529C0E14A98 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FA15205DEC249D120CAB7D0B02CA007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54669B55CAD05D71D76350DABAC5AC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ADC410E6960962523C0AE8F1924FD99 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B3EC9B304ACFD50E88AA440110093AC /* Starscream.modulemap */,
+				096100C61F7466762E6F863E58FC0CA5 /* Starscream.xcconfig */,
+				48B95BD8B41387056A0032EDFC1F10B0 /* Starscream-dummy.m */,
+				AE7766CE0D71E7C62EB150FE9908CFE8 /* Starscream-Info.plist */,
+				BA156C7564B593257C4A7C2C6CC28CA3 /* Starscream-prefix.pch */,
+				2DB7B7A2D70D1B530ADB41DFA897BC1F /* Starscream-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		64990C4D056CC579327EEDADBF632F40 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				990FD91D9D6AAC0658A4611D55452DBB /* Pods-Web Game Controller */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6701B612B147D923B51E7A301F19AAD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A4B8517E58BB28D0F50816CA72441A2 /* CDJoystick */,
+				F570BD26A456F5464518BE5ED69F9835 /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F916387941AD38CCE7385B59758B2B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E9CCD9B8FD803B242282DC1FDCBE171 /* CDJoystick.framework */,
+				8A84753D46F331BF927AD01CEDE34E73 /* Pods_Web_Game_Controller.framework */,
+				0274B71AC9E6F86EF6DDEF855D68DFBD /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		990FD91D9D6AAC0658A4611D55452DBB /* Pods-Web Game Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49F3938A6CA43C77DBC2156CFF6A8487 /* Pods-Web Game Controller.modulemap */,
+				A78446E17036852A46E6532653F6D23C /* Pods-Web Game Controller-acknowledgements.markdown */,
+				D8890ACCB8E317896F6A5DF22BA7A887 /* Pods-Web Game Controller-acknowledgements.plist */,
+				5B8F042E0CC20D25C23E0097705C8C39 /* Pods-Web Game Controller-dummy.m */,
+				7822AC120036FA3C56C7DB7C71AF5ACD /* Pods-Web Game Controller-frameworks.sh */,
+				11A200D6B5801B5C24B9522410A1BD4E /* Pods-Web Game Controller-Info.plist */,
+				BCB040C1A07D4DD0EC0A7067F378F13C /* Pods-Web Game Controller-umbrella.h */,
+				84B34A7DEC06A29917CF2AE2D447FDBB /* Pods-Web Game Controller.debug.xcconfig */,
+				4C02C28AA356D9A8A8A144B10C3115FF /* Pods-Web Game Controller.release.xcconfig */,
+			);
+			name = "Pods-Web Game Controller";
+			path = "Target Support Files/Pods-Web Game Controller";
+			sourceTree = "<group>";
+		};
+		9A4B8517E58BB28D0F50816CA72441A2 /* CDJoystick */ = {
+			isa = PBXGroup;
+			children = (
+				FDF9F4131503D9DF05473AB5449C057F /* CDJoystick.swift */,
+				C286DC739B2B7448D0A81367F995BB6D /* Support Files */,
+			);
+			name = CDJoystick;
+			path = CDJoystick;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C286DC739B2B7448D0A81367F995BB6D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4AD670BB16D582597E5B29A121AA9D4 /* CDJoystick.modulemap */,
+				A3AF6F793092466688D49D035754D757 /* CDJoystick.xcconfig */,
+				4D15BDE05CCDD8CDCD085A79FC6B417A /* CDJoystick-dummy.m */,
+				D17606777759FB9E3F962C0F24CC7981 /* CDJoystick-Info.plist */,
+				20D868C321C33B331F709760D435053D /* CDJoystick-prefix.pch */,
+				432121A00B690222A108D6DCCACB552B /* CDJoystick-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CDJoystick";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6701B612B147D923B51E7A301F19AAD5 /* Pods */,
+				6F916387941AD38CCE7385B59758B2B2 /* Products */,
+				64990C4D056CC579327EEDADBF632F40 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F570BD26A456F5464518BE5ED69F9835 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				56FFF8BDD33D0CAF2164F6A6FBFDDCC3 /* Compression.swift */,
+				59808DC661C38DCCFE22D78C32404D6A /* SSLClientCertificate.swift */,
+				D0D7916723D50974E73C4CB1A1BC61FF /* SSLSecurity.swift */,
+				791BC0DFE545EA419B38265AE077F1A2 /* WebSocket.swift */,
+				2ADC410E6960962523C0AE8F1924FD99 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1730129561246BBE4BC281D7325DBB03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940C2D1DE993E28F9EEAD16E62A96446 /* CDJoystick-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6621344141B38690C159BF3875462538 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE72819883C40CE385AD6979F140BF3D /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBED63DAA037E452B39C5BF831B97061 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC80DC4653566CE5F617B43AB04AD5D /* Pods-Web Game Controller-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		85573E98411DFB7F88D6CD56CAFD8FFE /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE8969354ED9107E09AE90BDEF5A2169 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				6621344141B38690C159BF3875462538 /* Headers */,
+				5E39C10E2AC43E86D2F02FC8E4D4567B /* Sources */,
+				6D0F8DA1BCFF7CC97CE1EB24481A0549 /* Frameworks */,
+				53249C1063FDCD2B24ADB8F5A5A12E24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 0274B71AC9E6F86EF6DDEF855D68DFBD /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C92E310655C2DD521517EB7FA837DA40 /* Pods-Web Game Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F2CD6B09B72E5502989C39B9B5E1C8B /* Build configuration list for PBXNativeTarget "Pods-Web Game Controller" */;
+			buildPhases = (
+				CBED63DAA037E452B39C5BF831B97061 /* Headers */,
+				107F953229C8F21C78214B192C3A4117 /* Sources */,
+				7FA15205DEC249D120CAB7D0B02CA007 /* Frameworks */,
+				699F1253F40A0BEEA4456F35D2123CE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4477924485CEE808E45B9AA1DB64146 /* PBXTargetDependency */,
+				9FA3E9176AEB148C421DB2A15308F6D4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Web Game Controller";
+			productName = "Pods-Web Game Controller";
+			productReference = 8A84753D46F331BF927AD01CEDE34E73 /* Pods_Web_Game_Controller.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E75BC21918A9ECCCD0F386DC0947BEDD /* CDJoystick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2FCF0E324C0FE8E238D989B601C88E /* Build configuration list for PBXNativeTarget "CDJoystick" */;
+			buildPhases = (
+				1730129561246BBE4BC281D7325DBB03 /* Headers */,
+				299CBBA28CD0E51C67EF0DFB86E97BE5 /* Sources */,
+				397A1EC01A5696D5173EB8DEAB748C57 /* Frameworks */,
+				265A1ECB27DCD64BFA0352CF488DE517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDJoystick;
+			productName = CDJoystick;
+			productReference = 7E9CCD9B8FD803B242282DC1FDCBE171 /* CDJoystick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6F916387941AD38CCE7385B59758B2B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E75BC21918A9ECCCD0F386DC0947BEDD /* CDJoystick */,
+				C92E310655C2DD521517EB7FA837DA40 /* Pods-Web Game Controller */,
+				85573E98411DFB7F88D6CD56CAFD8FFE /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		265A1ECB27DCD64BFA0352CF488DE517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53249C1063FDCD2B24ADB8F5A5A12E24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		699F1253F40A0BEEA4456F35D2123CE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		107F953229C8F21C78214B192C3A4117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25BDBC0C4A37B9C6573D702C66BF560 /* Pods-Web Game Controller-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299CBBA28CD0E51C67EF0DFB86E97BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C8E1790140A4CB0A2BDAB7FB9C7523 /* CDJoystick-dummy.m in Sources */,
+				840F7EB1E04F91734D493B4AC77B401E /* CDJoystick.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E39C10E2AC43E86D2F02FC8E4D4567B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B02B7C1DEE9B66E453E42C8882329A0 /* Compression.swift in Sources */,
+				B2E480EF91BB66D872C4AB85E888A2EB /* SSLClientCertificate.swift in Sources */,
+				C18C396B7FF6EE0BC91B65D0BDECC53F /* SSLSecurity.swift in Sources */,
+				3EEED437E7728C121E3AD24A895B34F7 /* Starscream-dummy.m in Sources */,
+				4E0F59766A92D370E2EEBB4F6EC2C042 /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FA3E9176AEB148C421DB2A15308F6D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 85573E98411DFB7F88D6CD56CAFD8FFE /* Starscream */;
+			targetProxy = 2103B89CC115D5A72B70EC55EB11A868 /* PBXContainerItemProxy */;
+		};
+		E4477924485CEE808E45B9AA1DB64146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDJoystick;
+			target = E75BC21918A9ECCCD0F386DC0947BEDD /* CDJoystick */;
+			targetProxy = CB9E18AEF0F02DA553E7B76A0A63E7A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FCF15205AF41863A8FD02D9BF3E9176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096100C61F7466762E6F863E58FC0CA5 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B2B5CBA0AFCD2BDBB08C4234B43A3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096100C61F7466762E6F863E58FC0CA5 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87EA54AB6CDA13450D5EFC043A910777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B34A7DEC06A29917CF2AE2D447FDBB /* Pods-Web Game Controller.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8CD2A8370D055CFAD34FB95FB6C666D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C02C28AA356D9A8A8A144B10C3115FF /* Pods-Web Game Controller.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A90A3820462DA3D06A9486857089C045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3AF6F793092466688D49D035754D757 /* CDJoystick.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDJoystick/CDJoystick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDJoystick/CDJoystick-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CDJoystick/CDJoystick.modulemap";
+				PRODUCT_MODULE_NAME = CDJoystick;
+				PRODUCT_NAME = CDJoystick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CE1012FE6CCAAAD4B2B37AA45559D050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3AF6F793092466688D49D035754D757 /* CDJoystick.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDJoystick/CDJoystick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDJoystick/CDJoystick-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CDJoystick/CDJoystick.modulemap";
+				PRODUCT_MODULE_NAME = CDJoystick;
+				PRODUCT_NAME = CDJoystick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1391485F05B41BD35738A433056B7FA /* Debug */,
+				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F2CD6B09B72E5502989C39B9B5E1C8B /* Build configuration list for PBXNativeTarget "Pods-Web Game Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EA54AB6CDA13450D5EFC043A910777 /* Debug */,
+				8CD2A8370D055CFAD34FB95FB6C666D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2FCF0E324C0FE8E238D989B601C88E /* Build configuration list for PBXNativeTarget "CDJoystick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1012FE6CCAAAD4B2B37AA45559D050 /* Debug */,
+				A90A3820462DA3D06A9486857089C045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE8969354ED9107E09AE90BDEF5A2169 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2B5CBA0AFCD2BDBB08C4234B43A3B6 /* Debug */,
+				0FCF15205AF41863A8FD02D9BF3E9176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

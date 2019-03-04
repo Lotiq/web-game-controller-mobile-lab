@@ -1,0 +1,20 @@
+PODS:
+  - CDJoystick (1.1.0)
+  - Starscream (3.0.6)
+
+DEPENDENCIES:
+  - CDJoystick (~> 1.1.0)
+  - Starscream (~> 3.0.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CDJoystick
+    - Starscream
+
+SPEC CHECKSUMS:
+  CDJoystick: 5563edf7dbc276cfec6f4606ee2a5b63ee54a15e
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+
+PODFILE CHECKSUM: 26b44742c6d69f9197a254c3df604a11bb37bb48
+
+COCOAPODS: 1.6.1

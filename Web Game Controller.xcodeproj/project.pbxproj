@@ -12,6 +12,7 @@
 		1C0A4848222D9A86004BBDE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A4846222D9A86004BBDE3 /* Main.storyboard */; };
 		1C0A484A222D9A87004BBDE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A4849222D9A87004BBDE3 /* Assets.xcassets */; };
 		1C0A484D222D9A87004BBDE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A484B222D9A87004BBDE3 /* LaunchScreen.storyboard */; };
+		D167128AD1E9BAB2FD128EE1 /* Pods_Web_Game_Controller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8913B7FD3737AD2FD6990999 /* Pods_Web_Game_Controller.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		1C0A4849222D9A87004BBDE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C0A484C222D9A87004BBDE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0A484E222D9A87004BBDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35375AEA0EB6AAA39EA3D7B3 /* Pods-Web Game Controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web Game Controller.release.xcconfig"; path = "Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller.release.xcconfig"; sourceTree = "<group>"; };
+		8913B7FD3737AD2FD6990999 /* Pods_Web_Game_Controller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Web_Game_Controller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD051E663ABA7DFD8E70DDB5 /* Pods-Web Game Controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web Game Controller.debug.xcconfig"; path = "Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D167128AD1E9BAB2FD128EE1 /* Pods_Web_Game_Controller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				1C0A4841222D9A86004BBDE3 /* Web Game Controller */,
 				1C0A4840222D9A86004BBDE3 /* Products */,
+				FB193F23560A590400C143A4 /* Pods */,
+				981BF113485C2345A401D6DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = "Web Game Controller";
 			sourceTree = "<group>";
 		};
+		981BF113485C2345A401D6DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8913B7FD3737AD2FD6990999 /* Pods_Web_Game_Controller.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB193F23560A590400C143A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD051E663ABA7DFD8E70DDB5 /* Pods-Web Game Controller.debug.xcconfig */,
+				35375AEA0EB6AAA39EA3D7B3 /* Pods-Web Game Controller.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C0A4851222D9A87004BBDE3 /* Build configuration list for PBXNativeTarget "Web Game Controller" */;
 			buildPhases = (
+				7E368C688FD1464099F82F03 /* [CP] Check Pods Manifest.lock */,
 				1C0A483B222D9A86004BBDE3 /* Sources */,
 				1C0A483C222D9A86004BBDE3 /* Frameworks */,
 				1C0A483D222D9A86004BBDE3 /* Resources */,
+				3002745FC8C33E262E6DDD6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3002745FC8C33E262E6DDD6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CDJoystick/CDJoystick.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CDJoystick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E368C688FD1464099F82F03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Web Game Controller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C0A483B222D9A86004BBDE3 /* Sources */ = {
@@ -280,6 +356,7 @@
 		};
 		1C0A4852222D9A87004BBDE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD051E663ABA7DFD8E70DDB5 /* Pods-Web Game Controller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		1C0A4853222D9A87004BBDE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35375AEA0EB6AAA39EA3D7B3 /* Pods-Web Game Controller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
