@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1C0A4843222D9A86004BBDE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0A4842222D9A86004BBDE3 /* AppDelegate.swift */; };
-		1C0A4845222D9A86004BBDE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0A4844222D9A86004BBDE3 /* ViewController.swift */; };
+		1C0A4845222D9A86004BBDE3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0A4844222D9A86004BBDE3 /* GameViewController.swift */; };
 		1C0A4848222D9A86004BBDE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A4846222D9A86004BBDE3 /* Main.storyboard */; };
 		1C0A484A222D9A87004BBDE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A4849222D9A87004BBDE3 /* Assets.xcassets */; };
 		1C0A484D222D9A87004BBDE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A484B222D9A87004BBDE3 /* LaunchScreen.storyboard */; };
+		1C0A4855222DBC7B004BBDE3 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0A4854222DBC7B004BBDE3 /* InitialViewController.swift */; };
 		D167128AD1E9BAB2FD128EE1 /* Pods_Web_Game_Controller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8913B7FD3737AD2FD6990999 /* Pods_Web_Game_Controller.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C0A483F222D9A86004BBDE3 /* Web Game Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Game Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0A4842222D9A86004BBDE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C0A4844222D9A86004BBDE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C0A4844222D9A86004BBDE3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		1C0A4847222D9A86004BBDE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C0A4849222D9A87004BBDE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C0A484C222D9A87004BBDE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0A484E222D9A87004BBDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0A4854222DBC7B004BBDE3 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		35375AEA0EB6AAA39EA3D7B3 /* Pods-Web Game Controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web Game Controller.release.xcconfig"; path = "Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller.release.xcconfig"; sourceTree = "<group>"; };
 		8913B7FD3737AD2FD6990999 /* Pods_Web_Game_Controller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Web_Game_Controller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD051E663ABA7DFD8E70DDB5 /* Pods-Web Game Controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web Game Controller.debug.xcconfig"; path = "Target Support Files/Pods-Web Game Controller/Pods-Web Game Controller.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,8 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				1C0A4842222D9A86004BBDE3 /* AppDelegate.swift */,
-				1C0A4844222D9A86004BBDE3 /* ViewController.swift */,
+				1C0A4844222D9A86004BBDE3 /* GameViewController.swift */,
 				1C0A4846222D9A86004BBDE3 /* Main.storyboard */,
+				1C0A4854222DBC7B004BBDE3 /* InitialViewController.swift */,
 				1C0A4849222D9A87004BBDE3 /* Assets.xcassets */,
 				1C0A484B222D9A87004BBDE3 /* LaunchScreen.storyboard */,
 				1C0A484E222D9A87004BBDE3 /* Info.plist */,
@@ -85,7 +88,6 @@
 				CD051E663ABA7DFD8E70DDB5 /* Pods-Web Game Controller.debug.xcconfig */,
 				35375AEA0EB6AAA39EA3D7B3 /* Pods-Web Game Controller.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C0A4845222D9A86004BBDE3 /* ViewController.swift in Sources */,
+				1C0A4855222DBC7B004BBDE3 /* InitialViewController.swift in Sources */,
+				1C0A4845222D9A86004BBDE3 /* GameViewController.swift in Sources */,
 				1C0A4843222D9A86004BBDE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
