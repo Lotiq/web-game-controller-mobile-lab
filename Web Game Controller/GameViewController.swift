@@ -9,6 +9,7 @@
 import UIKit
 import Starscream
 import CDJoystick
+import Foundation
 
 struct windowDimensions{
     let minX = 0
@@ -31,6 +32,9 @@ class GameViewController: UIViewController, WebSocketDelegate{
     
     @IBOutlet weak var joystick: CDJoystick!
     
+    var latestAngle: Double = 0
+    var previousLoc: (Double,Double) = (0,0)
+    var currentLoc: (Double,Double) = (0,0)
     var defaults: UserDefaults!
     var socket: WebSocket?
     var playerId: String = "Chupacabra"
@@ -61,7 +65,15 @@ class GameViewController: UIViewController, WebSocketDelegate{
         joystick.fade = 0.5
         
         joystick.trackingHandler = { joystickData in
-            self.move(angle: joystickData.angle)
+            let dataAngle = joystickData.angle
+            var angle: Double!
+            if (dataAngle>CGFloat.pi/2 && dataAngle<CGFloat.pi*3/2){
+                angle = 2*Double.pi - acos(sin(Double(joystickData.angle)))
+            } else {
+                angle = acos(sin(Double(joystickData.angle)))
+            }
+            self.move(angle: angle)
+            
         }
         
         defaults = UserDefaults.standard
@@ -73,16 +85,16 @@ class GameViewController: UIViewController, WebSocketDelegate{
         }
     }
     
-    func move(angle: CGFloat){
-        let part = angle/CGFloat.pi
-        if (part >= 1.75 && part <= 2) || (part >= 0 && part < 0.25){
-            sendDirectionMessage(.up)
-        } else if (part >= 0.25 && part < 0.75){
+    func move(angle: Double){
+        let PI = Double.pi
+        if (angle >= 0 && angle <= PI/4) || (angle >= 1.75*PI  && angle < 2*PI){
             sendDirectionMessage(.right)
-        } else if (part >= 0.75 && part < 1.25){
-            sendDirectionMessage(.down)
-        } else {
+        } else if (angle > PI/4 && angle <= PI*3/4){
+            sendDirectionMessage(.up)
+        } else if (angle < PI*5/4 && angle > PI*3/4){
             sendDirectionMessage(.left)
+        } else {
+            sendDirectionMessage(.down)
         }
     }
     
@@ -95,7 +107,9 @@ class GameViewController: UIViewController, WebSocketDelegate{
     }
     
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
-        print("⬇️ websocket did receive message:", text)
+        let data: Data? = text.data(using: .utf8)
+        let json = (try? JSONSerialization.jsonObject(with: data!, options: [])) as? [String:AnyObject]
+        print(json ?? "Empty Data")
     }
     
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
