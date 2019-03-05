@@ -9,14 +9,16 @@
 import UIKit
 import Starscream
 import CDJoystick
+
 import Foundation
+import WebKit
+
 
 struct windowDimensions{
     let minX = 0
     let minY = 0
     let maxX = 95
     let maxY = 53
-    let step = 0.25
 }
 
 enum DirectionCode: String {
@@ -30,6 +32,7 @@ let playerIdKey = "PLAYER_ID"
 
 class GameViewController: UIViewController, WebSocketDelegate{
     
+    @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var joystick: CDJoystick!
     
     var latestAngle: Double = 0
@@ -42,15 +45,12 @@ class GameViewController: UIViewController, WebSocketDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let urlString = "wss://gameserver.mobilelabclass.com"
+        let urlString = "https://gameserver.mobilelabclass.com"
         socket = WebSocket(url: URL(string: urlString)!)
-        
-        
-        // Assign WebSocket delegate to self
         socket?.delegate = self
         
-        // Connect.
         socket?.connect()
+        webView.load(URLRequest(url: URL(string: "https://game.mobilelabclass.com/")!))
         
         // Assigning notifications to handle when the app becomes active or inactive.
         NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.willResignActiveNotification, object: nil)

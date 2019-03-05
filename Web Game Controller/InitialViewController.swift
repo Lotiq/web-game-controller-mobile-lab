@@ -15,6 +15,7 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         nicknameTextField.delegate = self
+        startButton.isEnabled = false
         // Do any additional setup after loading the view.
     }
     
@@ -36,6 +37,7 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // nothing yets
+        let vc = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as? GameViewController
+        vc?.playerId = nicknameTextField.text!
     }
 }
