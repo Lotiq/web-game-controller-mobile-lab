@@ -35,6 +35,7 @@ class GameViewController: UIViewController, WebSocketDelegate{
     var latestAngle: Double = 0
     var previousLoc: (Double,Double) = (0,0)
     var currentLoc: (Double,Double) = (0,0)
+    var previousDirection: DirectionCode = .up
     var defaults: UserDefaults!
     var socket: WebSocket?
     var playerId: String = "Chupacabra"
@@ -87,15 +88,43 @@ class GameViewController: UIViewController, WebSocketDelegate{
     
     func move(angle: Double){
         let PI = Double.pi
-        if (angle >= 0 && angle <= PI/4) || (angle >= 1.75*PI  && angle < 2*PI){
+        switch angle {
+        case 0..<PI/6,11*PI/6..<2*PI:
             sendDirectionMessage(.right)
-        } else if (angle > PI/4 && angle <= PI*3/4){
+        case PI/6..<PI/3:
+            if (previousDirection == .up){
+               sendDirectionMessage(.right)
+            } else {
+               sendDirectionMessage(.up)
+            }
+        case PI/3..<2*PI/3:
             sendDirectionMessage(.up)
-        } else if (angle < PI*5/4 && angle > PI*3/4){
+        case 2*PI/3..<5*PI/6:
+            if (previousDirection == .up){
+                sendDirectionMessage(.left)
+            } else {
+                sendDirectionMessage(.up)
+            }
+        case 5*PI/6..<7*PI/6:
             sendDirectionMessage(.left)
-        } else {
+        case 7*PI/6..<8*PI/6:
+            if (previousDirection == .down){
+                sendDirectionMessage(.left)
+            } else {
+                sendDirectionMessage(.down)
+            }
+        case 8*PI/6..<10*PI/6:
             sendDirectionMessage(.down)
+        case 10*PI/6..<11*PI/6:
+            if (previousDirection == .down){
+                sendDirectionMessage(.right)
+            } else {
+                sendDirectionMessage(.down)
+            }
+        default:
+            print("error")
         }
+        
     }
     
     func websocketDidConnect(socket: WebSocketClient) {
@@ -107,9 +136,26 @@ class GameViewController: UIViewController, WebSocketDelegate{
     }
     
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
+        print(text)
         let data: Data? = text.data(using: .utf8)
-        let json = (try? JSONSerialization.jsonObject(with: data!, options: [])) as? [String:AnyObject]
-        print(json ?? "Empty Data")
+        guard let json = (try? JSONSerialization.jsonObject(with: data!, options: [])) as? [String:AnyObject] else{
+            print("failed json")
+            return
+        }
+        
+        guard let players = json["players"] as? [String:AnyObject], let myPlayer = players[playerId] as? [String: AnyObject] else{
+            print("couldn't find my player")
+            return
+        }
+        
+        guard let xLoc = myPlayer["x"] as? Double, let yLoc = myPlayer["y"] as? Double, let dir = myPlayer["direction"] as? Int else {
+            print("couldn't find locations or direction")
+            return
+        }
+        
+        
+        
+        
     }
     
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
@@ -119,6 +165,7 @@ class GameViewController: UIViewController, WebSocketDelegate{
     func sendDirectionMessage(_ code: DirectionCode) {
         // Get the raw string value from the DirectionCode enum
         // that we created at the top of this program.
+        previousDirection = code
         sendMessage(code.rawValue)
     }
     
@@ -129,7 +176,7 @@ class GameViewController: UIViewController, WebSocketDelegate{
         socket?.write(string: message) {
             // This is a completion block.
             // We can write custom code here that will run once the message is sent.
-            print("⬆️ sent message to server: ", message)
+            //print("⬆️ sent message to server: ", message)
         }
         ///////////////////////////////////////////////////////////
     }
@@ -143,7 +190,6 @@ class GameViewController: UIViewController, WebSocketDelegate{
         print("💡 Application did become active. Connecting socket.")
         socket?.connect()
     }
-    
 
 }
 
