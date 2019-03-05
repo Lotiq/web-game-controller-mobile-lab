@@ -16,7 +16,6 @@ struct windowDimensions{
     let minY = 0
     let maxX = 95
     let maxY = 53
-    let step = 0.25
 }
 
 enum DirectionCode: String {
@@ -28,7 +27,7 @@ enum DirectionCode: String {
 
 let playerIdKey = "PLAYER_ID"
 
-class GameViewController: UIViewController, WebSocketDelegate, WKUIDelegate{
+class GameViewController: UIViewController, WebSocketDelegate{
     
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var joystick: CDJoystick!
@@ -39,14 +38,13 @@ class GameViewController: UIViewController, WebSocketDelegate, WKUIDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let urlString = "wss://gameserver.mobilelabclass.com"
+        let urlString = "https://gameserver.mobilelabclass.com"
         socket = WebSocket(url: URL(string: urlString)!)
         socket?.delegate = self
-        webView.uiDelegate = self
         
         socket?.connect()
-        let request = URLRequest(url: URL(string: "wss://gameserver.mobilelabclass.com")!)
-        webView.load(request)
+        webView.load(URLRequest(url: URL(string: "https://game.mobilelabclass.com/")!))
+        
         // Assigning notifications to handle when the app becomes active or inactive.
         NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.willResignActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
